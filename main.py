@@ -133,7 +133,7 @@ n.to(device)
 
 def train(net, data: torch.utils.data.DataLoader, criterion, opt: torch.optim, epos, test):
     """
-    :param test: If it is set True, you should comment 'thw[i].grad = None' in line 107.
+    :param test: If it is set True, you should comment 'thw[i].grad = None' in line 103.
     """
     global temp, temp_grad
     for epo in tqdm(range(epos), desc="Training", ncols=100):
